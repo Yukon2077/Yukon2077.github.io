@@ -1,35 +1,32 @@
 html {
-	font-family: 'Open Sans', sans-serif;
-	margin: 0px;
-	height: 100%;
-	min-height: 100%;
-	line-height: 24px;
+	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+	line-height: 24px;
 }
+
 body {
 	margin: 0px;
 }
 
-nav li {
-	display: inline;
-	margin-right: 8px;	
-	margin-left: 8px;
+p {
+	text-indent: 36px;
 }
 
-.center {
-	text-align: center;
+nav li {
+	display: inline-block;
+	padding: 8px 8px 8px 8px;
 }
 
 header h1 {
 	color: white;
-	background-color: darkred;
+	background-color: #CC0000;
 	margin: 0px;
 	padding: 100px;
 }
 
 nav ul {
 	border-top: solid white;
-	background-color: darkred;
+	background-color: #CC0000;
 	margin: 0px;
 	padding: 10px;
 }
@@ -39,12 +36,12 @@ nav a, footer a {
 }
 
 nav a:hover, footer a:hover {
-	color: red;
+	color: #770000;
 }
 
 footer {
 	color: white;
-	background-color: darkred;
+	background-color: #CC0000;
 	padding: 24px;
 }
 
@@ -58,25 +55,27 @@ section {
 }
 
 section dt {
-	margin-left: 12px;
-	margin-right: 12px;
-}
-
-section p,section dl,section li, {
-	margin-left: 24px;
-	margin-right: 24px;
+	font-weight: bold;
 }
 
 a {
-	color: red;
-	/*text-decoration: none;*/
-}	
+	color: #FF0000;
+	text-decoration: none;
+}
 
 a:hover {
-	color: darkred;
+	color: #770000;
+}
+
+.center {
+	text-align: center;
+}
+
+p, li, dd {
+	color: #434343;
 }
 
 ::selection {
   color: white;
-  background: red;
+  background: #FF0000;
 }
