@@ -36,10 +36,11 @@ nav li {
 nav a, footer a {
 	color: white;
 	padding: 8px;
+	transition-duration: 0.4s;
 }
 
 nav a:hover, footer a:hover {
-	color: #770000;
+	color: #550000;
 }
 
 footer {
@@ -64,10 +65,11 @@ section dt {
 a {
 	color: #FF0000;
 	text-decoration: none;
+	transition-duration: 0.4s;
 }
 
 a:hover {
-	color: #770000;
+	color: #550000;
 }
 
 .center {
