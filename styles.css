@@ -14,7 +14,7 @@ p {
 
 header h1 {
 	color: white;
-	background-color: #CC0000;
+	background-color: #0066CC;
 	margin: 0px;
 	padding: 100px;
 }
@@ -24,7 +24,7 @@ nav ul {
 	align-items: center;
 	justify-content: center;
 	border-top: solid white;
-	background-color: #CC0000;
+	background-color: #0066CC;
 	margin: 0px;
 	padding: 8px;
 }
@@ -41,14 +41,14 @@ nav a, footer a {
 }
 
 nav a:hover, footer a:hover {
-	color: #550000;
+	color: #002255;
 	font-size: 120%;
 	padding: 6px;
 }
 
 footer {
 	color: white;
-	background-color: #CC0000;
+	background-color: #0066CC;
 	padding: 24px;
 }
 
@@ -66,14 +66,14 @@ section dt {
 }
 
 a {
-	color: #FF0000;
+	color: #0088FF;
 	text-decoration: none;
 	line-height: 1;
 	transition-duration: 0.4s;
 }
 
 a:hover {
-	color: #550000;
+	color: #002255;
 	font-size: 110%;
 }
 
@@ -87,5 +87,5 @@ p, li, dd {
 
 ::selection {
   color: white;
-  background: #FF0000;
+  background: #0088FF;
 }
