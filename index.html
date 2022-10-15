@@ -1,87 +1,88 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yukon2077</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.svg">
+</head>
+<body>
 
-  <head>
-    <title>Yukon2077</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
-  </head>
+  <header id="home">
+    <nav>
+      <ul class="nav-items">
+        <span>
+        <li class="nav-item"><a href="/">Yukon2077</a></li>
+        </span>
+        <span class="float-right">
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#interests">Interests</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        </span>
+      </ul>
+    </nav>
+  </header>
 
-  <body>
-    <div>
+  <section id="about">
+    <h3>About</h3>I'm Yuvankumar. I'm a student studying Computer Science and Engineering currently.
+  </section>
 
-      <header>
-        <h1 class="center">Yukon2077</h1>
-        <nav>
-            <ul class="center">
-              <li><a href="#Areas_of_Interest">Areas of Interest</a></li>
-              <li><a href="#Skills">Skills</a></li>
-              <li><a href="#Projects">Projects</a></li>
-              <li><a href="#Contact-Me">Contact Me</a></li>
-            </ul>
-        </nav>
-      </header>
+  <section id="interests">
+    <h3>Interests</h3>
+    <ul class="flex-container">
+      <li class="chip">Software Development</li>
+      <li class="chip">Web Development</li>
+      <li class="chip">Penetration Testing</li>
+      <li class="chip">Machine Learing</li>
+      <li class="chip">Video Game Development</li>
+    </ul>
+  </section>
 
-      <section id="Me">
-        <h3>About Me:</h3>
-        <p>I'm Yuvankumar. I'm a student studying Computer Science and Engineering currently.</p>
-      </section>
+  <section id="skills">
+    <h3>Skills</h3>
+    <ul class="flex-container">
+      <li class="chip">Flask</li>
+      <li class="chip">Android</li>
+      <li class="chip">Flutter</li>
+      <li class="chip">Python</li>
+      <li class="chip">Java</li>
+      <li class="chip">Kotlin</li>
+    </ul>
+  </section>
 
-      <section id="Areas_of_Interest">
-        <h3>Areas of Interest:</h3>
-        <ul>
-          <li>Software Development</li>
-          <li>Penetration Testing</li>
-          <li>Web Development</li>
-          <li>Video Game Development</li>
-        </ul>
-      </section>
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="flex-container">
 
-      <section id="Skills">
-        <h3>Skills:</h3>
-        <ul>
-          <li>Android App Development</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>Kotlin</li>
-          <li>Django</li> 
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>C/C++</li>
-        </ul>
-      </section>
+      <div class="card">
+        <div class="card-title">Student Attendance Tracker</div>
+        <div class="card-body">A Web Application using Flask to track student's attendance and also allowing student's to view their attendance details.</div>
+      </div>
 
-      <section id="Projects">
-        <h3>Projects:</h3>
-        <dl>
-          <dt><a href="https://github.com/Yukon2077/VideoGameFinder" target="_blank">Video Game Finder</a></dt>
-            <dd>An android app to find video games based on many options</dd>
-          <dt><a href="https://github.com/SyedAnas26/Association-Managing-App" target="_blank">Pollify</a></dt>
-            <dd>A OTP based polling app</dd>
-          <dt><a href="https://github.com/Yukon2077/Notes_By_Yukon" target="_blank">Notes</a></dt>
-            <dd>An android app to write, save and view notes</dd>
-          <dt><a href="https://github.com/Yukon2077/DataTransferTimeCalculator" target="_blank">Data Transfer Time Calculator</a></dt>
-            <dd>An android app to calculate how much time it takes to transfer a file</dd>
-        </dl>
-      </section>
+      <div class="card">
+        <div class="card-title">Video Game Finder</div>
+        <div class="card-body">A Android App with Kotlin to search for video games based on number of options. Uses rawg.io database as source.</div>
+      </div>
 
-      <footer>
-        <h3 id="Contact-Me">Contact Me:</h3>
-        <ul>
-          <li><a href="mailto:yuvankumar2077@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i> yuvankumar2077@gmail.com</a></li>
-          <li><a href="https://wa.me/917418906123" target="_blank"><i class="bi bi-whatsapp"></i> +91 74189 06123</a></li>
-          <li><a href="https://github.com/Yukon2077/" target="_blank"><i class="bi bi-github"></i> Yukon2077</a></li>
-        </ul>
-      </footer>
-
+      <div class="card">
+        <div class="card-title">Pollify</div>
+        <div class="card-body">A Polling Project with Django and Android (Java). Comes with OTP authentication.</div>
+      </div>
+      
     </div>
-  </body>
+  </section>
+
+  <footer id="contact">
+    <h3>Contact</h3>
+    <ul class="nav-items flex-container">
+        <li class="nav-item"><a href="https://github.com/Yukon2077"><i class="bi bi-github"></i></a></li>
+        <li class="nav-item"><a href="https://wa.me/917418906123"><i class="bi bi-whatsapp"></i></a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/yuvan-kumar-739a0419b/"><i class="bi bi-linkedin"></i></a></li>
+      </ul>
+  </footer>
+
+</body>
 </html>
