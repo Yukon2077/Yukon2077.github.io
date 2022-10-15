@@ -15,6 +15,7 @@
 html {
 	background: linear-gradient(to bottom right, deepskyblue, blueviolet);
 	scroll-behavior: smooth;
+	cursor: default;
 }
 
 nav {
@@ -62,15 +63,19 @@ nav {
 	list-style-type: none;
 }
 
+.float-right {
+	    float: right;
+}
+
 @media(min-width: 769px) {
-	.float-right {
+	.nav-float-right {
 	    float: right;
 	}
 }
 
 
 @media(max-width: 768px) {
-	.float-right::before{
+	.nav-float-right::before{
 		  content: "\a";
 	    white-space: pre;
 	}
@@ -85,11 +90,16 @@ nav {
 }
 
 section {
-	padding: 24px;
+	padding: 12px;
 }
 
 h3 {
 	font-size: 20px;
+	margin: 4px;
+}
+
+p {
+	margin: 8px;
 }
 
 footer {
@@ -99,31 +109,29 @@ footer {
 }
 
 .chip {
-	padding: 12px;
-	margin: 12px;
-	border: solid;
+	padding: 10px;
+	margin: 4px;
 	border-radius: 6px;
-	transition-duration: 0.3s;
+	box-shadow: 0px 0px 4px black;
+	color: white;
+	font-size: 14px;
+	background: #121212;
 }
 
-.chip:hover {
-	color: deepskyblue;
-	background: black;
-	transition-duration: 0.3s;
-}
 
 .card {
-	padding: 12px;
-	margin: 12px;
+	padding:10px;
+	margin: 4px;
 	max-width: 46%;
-	border: solid;
+	box-shadow: 0px 0px 4px black;
 	border-radius: 6px;
-	transition-duration: 0.3s;
+	color: white;
+	background: #121212;
 }
 
 @media(min-width: 769px) {
 	.card {
-		max-width: 42%;
+		max-width: 46%;
 	}
 }
 
@@ -134,18 +142,23 @@ footer {
 	}
 }
 
-.card:hover {
-	color: deepskyblue;
-	background: black;
-	transition-duration: 0.3s;
-}
-
 .card-title {
 	padding: 4px;
-	font-size: 18px;
-	font-weight: 800;
+	font-size: 16px;
 }
 
 .card-body {
+	color: rgb(180, 180, 180);
+	font-size: 14px;
 	padding: 4px;
+}
+
+.bi-black {
+	color: white;
+	transition-duration: 0.3s;
+}
+
+.bi-black:hover {
+	color: deepskyblue;
+	transition-duration: 0.3s;
 }
