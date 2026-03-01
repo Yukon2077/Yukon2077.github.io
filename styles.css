@@ -1,164 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+@import 'tailwindcss';
 
-* {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-        font-family: 'JetBrains Mono', monospace;
+@theme {
+	--font-mono: 'JetBrains Mono', monospace;
+
+	--shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1),
+		inset 0 1px 3px 0 rgb(255 255 255/ 0.15);
+	--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05),
+		inset 0 1px 2px 0 rgb(255 255 255/ 0.15);
+	--shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+		0 2px 4px -2px rgb(0 0 0 / 0.1),
+		inset 0 4px 6px -1px rgb(255 255 255/ 0.15);
+	--shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1),
+		inset 0 10px 15px -3px rgb(255 255 255/ 0.15);
+	--shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1),
+		inset 0 20px 25px -5px rgb(255 255 255/ 0.15);
+	--shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25),
+		inset 0 25px 50px -12px rgb(255 255 255/ 0.15);
+	--shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05),
+		inset 0 -2px 4px 0 rgb(255 255 255/ 0.1);
 }
 
-html {
-	background: linear-gradient(to bottom right, deepskyblue, blueviolet);
-	scroll-behavior: smooth;
-	cursor: default;
-}
-
-nav {
-	background: #121212;
-	color: white;
-	box-shadow: 0px 0px 8px black;
-}
-
-.nav-items {
-	padding: 8px;
-	list-style-type: none;
-}
-
-.nav-item {
-	padding: 12px;
-	display: inline-flex;}
-
-.nav-item a {
-	color: white;
-	transition-duration: 0.3s;
-	text-decoration: none;
-}
-
-.nav-item a:hover {
-	color: deepskyblue;
-	transition-duration: 0.3s;
-	text-decoration: none;
-}
-
-.nav-item a:visited {
-	color: white;
-	transition-duration: 0.3s;
-	text-decoration: none;
-}
-
-.nav-item a:visited:hover {
-	color: deepskyblue;
-	transition-duration: 0.3s;
-	text-decoration: none;
-}
-
-.flex-container {
-	display: inline-flex;
-	flex-flow: row wrap;
-	list-style-type: none;
-}
-
-.float-right {
-	    float: right;
-}
-
-@media(min-width: 769px) {
-	.nav-float-right {
-	    float: right;
-	}
-}
-
-
-@media(max-width: 768px) {
-	.nav-float-right::before{
-		  content: "\a";
-	    white-space: pre;
-	}
-}
-
-.flex-right {
-	justify-content: right;
-}
-
-.flex-left {
-	justify-content: left;
-}
-
-section {
-	padding: 12px;
-}
-
-h3 {
-	font-size: 20px;
-	margin: 4px;
-}
-
-p {
-	margin: 8px;
-}
-
-footer {
-	padding: 24px;
-	background: #121212;
-	color: white;
-}
-
-.chip {
-	padding: 10px;
-	margin: 4px;
-	border-radius: 6px;
-	box-shadow: 0px 0px 4px black;
-	color: white;
-	font-size: 14px;
-	background: #121212;
-}
-
-
-.card {
-	padding:10px;
-	margin: 4px;
-	max-width: 46%;
-	box-shadow: 0px 0px 4px black;
-	border-radius: 6px;
-	color: white;
-	background: #121212;
-}
-
-@media(min-width: 769px) {
+@layer components {
 	.card {
-		max-width: 46%;
+		@apply transition-all bg-red-700 shadow-xl rounded-xl p-4
+		hover:bg-red-600 hover:shadow-2xl  hover:scale-105;
 	}
-}
 
-
-@media(max-width: 768px) {
-	.card {
-		max-width: 100%;
+	.card-title {
+		@apply transition-all text-lg font-bold;
 	}
-}
 
-.card-title {
-	padding: 4px;
-	font-size: 16px;
-}
+	.card-body {
+		@apply transition-all max-h-0 invisible group-hover:max-h-40 group-hover:visible overflow-hidden;
+	}
 
-.card-body {
-	color: rgb(180, 180, 180);
-	font-size: 14px;
-	padding: 4px;
-}
-
-.bi-black {
-	color: white;
-	transition-duration: 0.3s;
-}
-
-.bi-black:hover {
-	color: deepskyblue;
-	transition-duration: 0.3s;
+	.icon-button {
+		@apply transition-all text-lg text-white hover:text-red-500 hover:scale-125;
+	}
 }

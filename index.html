@@ -1,105 +1,147 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yukon2077</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="favicon.svg">
-</head>
-<body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Yukon2077</title>
+		<link rel="icon" type="image/x-icon" href="favicon.svg" />
+		<link rel="stylesheet" type="text/css" href="dist/styles.css" />
+		<script
+			src="https://kit.fontawesome.com/07ed442f90.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-  <header id="home">
-    <nav>
-      <ul class="nav-items">
-        <span>
-        <li class="nav-item"><a href="/">Yukon2077</a></li>
-        </span>
-        <span class="nav-float-right">
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#interests">Interests</a></li>
-        <li class="nav-item"><a href="#skills">Skills</a></li>
-        <li class="nav-item"><a href="#projects">Projects</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-        </span>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h3>About</h3>
-    <p>I'm Yuvankumar. I'm a Computer Nerd studying Computer Science and Engineering currently.</p>
-  </section>
-
-  <section id="interests">
-    <h3>Interests</h3>
-    <ul class="flex-container">
-      <li class="chip">Software Development</li>
-      <li class="chip">Web Development</li>
-      <li class="chip">Penetration Testing</li>
-      <li class="chip">Machine Learing</li>
-      <li class="chip">Video Game Development</li>
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h3>Skills</h3>
-    <ul class="flex-container">
-      <li class="chip">Flask</li>
-      <li class="chip">Android</li>
-      <li class="chip">Flutter</li>
-      <li class="chip">Python</li>
-      <li class="chip">Java</li>
-      <li class="chip">Kotlin</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h3>Projects</h3>
-    <div class="flex-container">
-
-      <div class="card">
-        <div class="card-title">
-          Student Attendance Tracker
-          <span class="float-right">
-             <a href="https://github.com/Yukon2077/student-attendance-tracker"><i class="bi bi-github bi-black"></i></a>
-          </span>
-        </div>
-        <div class="card-body">A Web Application using Flask to track student's attendance and also allowing student's to view their attendance details.</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          Video Game Finder
-          <span class="float-right">
-             <a href="https://github.com/Yukon2077/VideoGameFinder"><i class="bi bi-github bi-black"></i></a>
-          </span>
-        </div>
-        <div class="card-body">An Android App with Kotlin to search for video games based on number of options. It uses rawg.io database as source.</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          Pollify
-          <span class="float-right">
-             <a href="https://github.com/SyedAnas26/Association-Managing-App"><i class="bi bi-github bi-black"></i></a>
-             <a href="https://play.google.com/store/apps/details?id=com.pollify"><i class="bi bi-google-play bi-black"></i></a>
-          </span>
-        </div>
-        <div class="card-body">A Polling Project with Django and Android (Java). It comes with SMS-based OTP authentication.</div>
-      </div>
-      
-    </div>
-  </section>
-
-  <footer id="contact">
-    <h3>Contact</h3>
-    <ul class="nav-items flex-container">
-        <li class="nav-item"><a href="https://github.com/Yukon2077"><i class="bi bi-github"></i></a></li>
-        <li class="nav-item"><a href="https://wa.me/917418906123"><i class="bi bi-whatsapp"></i></a></li>
-        <li class="nav-item"><a href="https://www.linkedin.com/in/yuvan-kumar-739a0419b/"><i class="bi bi-linkedin"></i></a></li>
-      </ul>
-  </footer>
-
-</body>
+	<body
+		class="bg-linear-0 bg-gradient-to-br from-red-600 to-red-950 font-mono min-h-dvh mx-auto text-white max-w-[56rem]"
+	>
+		<div class="">    
+			<section class="p-4">
+				<div class="text-xl">About</div>
+				<div>
+					I'm Yuvan. I like playing Video Games & tinkering with
+					Computers.
+				</div>
+			</section>
+			<section class="p-4">
+				<div class="text-xl">Projects</div>
+				<div class="mt-2 flex flex-col gap-4 w-full">
+					<div class="card group">
+						<div class="card-title">Pollify</div>
+						<div class="card-body">
+							<div class="text-red-200">
+								A Polling Project with SMS-based OTP
+								authentication
+							</div>
+							<div class="text-red-300">
+								Django | Android (Java)
+							</div>
+						</div>
+					</div>
+					<div class="card group">
+						<div class="card-title">Student Attendance Tracker</div>
+						<div class="card-body">
+							<div class="text-red-200">
+								A Student Attendance Tracker
+							</div>
+							<div class="text-red-300">Flask | SQLite</div>
+						</div>
+					</div>
+					<div class="card group">
+						<div class="card-title">Video Game Finder</div>
+						<div class="card-body">
+							<div class="text-red-200">
+								A video game finding app
+							</div>
+							<div class="text-red-300">Android (Kotlin)</div>
+						</div>
+					</div>
+					<div class="card group">
+						<div class="card-title">Notes</div>
+						<div class="card-body">
+							<div class="text-red-200">A Notes App</div>
+							<div class="text-red-300">Android (Java)</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="p-4">
+				<div class="text-xl">Skills</div>
+				<div class="flex gap-2">
+					<div class="card card-title">Angular</div>
+					<div class="card card-title">Flask</div>
+					<div class="card card-title">Android</div>
+					<div class="card card-title">Flutter</div>
+				</div>
+			</section>
+			<section class="p-4">
+				<div class="text-xl">Interests</div>
+				<div class="flex gap-2">
+					<div class="card card-title">Video Games</div>
+					<div class="card card-title">Web Development</div>
+					<div class="card card-title">Android App Development</div>
+				</div>
+			</section>
+			<section class="p-4">
+				<div class="text-xl">Timeline</div>
+				<div>
+					<div>Packaged App Development Analyst</div>
+					<div class="text-red-200">Accenture</div>
+					<div class="text-red-300">Oct 2023 - Present</div>
+				</div>
+				<div>
+					<div>CSE Student</div>
+					<div class="text-red-200">SRM VEC</div>
+					<div class="text-red-300">August 2019 - May 2023</div>
+				</div>
+				<div>
+					<div>School Student</div>
+					<div class="text-red-200">
+						St. Vincent Pallotti Mat. Hr. Sec. School
+					</div>
+					<div class="text-red-300">??? 2008 - May 2019</div>
+				</div>
+				<div>
+					<div>Born</div>
+					<div class="text-red-200">
+						A Hospital in Perungalathur, Chennai
+					</div>
+					<div class="text-red-300">Jan 2002</div>
+				</div>
+			</section>
+			<section class="p-4">
+				<div class="text-xl">Contact</div>
+				<div class="flex gap-2">
+					<a
+						class="icon-button"
+						href="mailto:yuvankumar2077@gmail.com"
+						target="_blank"
+					>
+						<i class="fa-solid fa-envelope"></i>
+					</a>
+					<a
+						class="icon-button"
+						href="https://wa.me/917418906123"
+						target="_blank"
+					>
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+					<a
+						class="icon-button"
+						href="tel:917418906123"
+						target="_blank"
+					>
+						<i class="fa-solid fa-phone"></i>
+					</a>
+					<a
+						class="icon-button"
+						href="https://github.com/Yukon2077"
+						target="_blank"
+					>
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>
