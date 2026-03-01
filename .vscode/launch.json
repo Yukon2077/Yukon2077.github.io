@@ -7,9 +7,9 @@
         
         {
             "type": "node-terminal",
-            "name": "Run Script: start",
+            "name": "Run Script: dev",
             "request": "launch",
-            "command": "npm run start",
+            "command": "npm run dev",
             "cwd": "${workspaceFolder}"
         }
     ]
